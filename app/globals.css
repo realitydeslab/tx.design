@@ -1,0 +1,193 @@
+/* tx.design visual parity — tokens extracted from the live site */
+:root {
+  --bg: rgb(233, 232, 232);
+  --text: rgb(82, 84, 83);
+  --text-muted: rgba(82, 84, 83, 0.7);
+  --font-serif: "Cormorant Garamond", Helvetica, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", -apple-system, system-ui,
+    "Helvetica Neue", sans-serif;
+  --content-max: 708px; /* article content column (900px article - 2x96px padding) */
+  --nav-height: 71px;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; background: var(--bg); }
+
+body {
+  color: var(--text);
+  font-family: var(--font-serif);
+  font-size: 19px;
+  line-height: 28.5px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  height: var(--nav-height);
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  z-index: 10;
+  font-size: 16.625px;
+  color: var(--text);
+}
+
+.navbar-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.super-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.notion-root {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 96px 270px;
+  display: flex;
+  flex-direction: column;
+}
+
+.manifesto-header h1 {
+  font-size: 37.62px;
+  font-weight: 700;
+  line-height: 37.62px;
+  letter-spacing: -0.005em;
+  margin: 140px 0 0;
+  padding: 2px;
+}
+
+.manifesto-header .subtitle {
+  font-size: 28.5px;
+  font-weight: 600;
+  line-height: 37.05px;
+  margin: 45px 0 0;
+  padding: 3px 2px;
+}
+
+.manifesto-header .author {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 28.5px;
+  margin: 0;
+  padding: 3px 2px;
+}
+
+.manifesto-header .author:first-of-type { margin-top: 38px; }
+
+.manifesto-body {
+  margin-top: 8px;
+}
+
+.manifesto-body h1,
+.manifesto-body h2,
+.manifesto-body h3 {
+  font-family: var(--font-serif);
+  color: var(--text);
+  padding: 3px 2px;
+}
+
+.manifesto-body h2 {
+  font-size: 28.5px;
+  font-weight: 600;
+  line-height: 37.05px;
+  margin: 19px 0 0;
+}
+
+.manifesto-body > h2:first-child { margin-top: 19px; }
+.manifesto-body p + h2,
+.manifesto-body ul + h2,
+.manifesto-body ol + h2 { margin-top: 19px; }
+
+.manifesto-body h3 {
+  font-size: 22.8px;
+  font-weight: 600;
+  line-height: 28.5px;
+  margin: 28px 0 0;
+}
+
+.manifesto-body p {
+  font-size: 19px;
+  line-height: 28.5px;
+  margin: 0;
+  padding: 3px 2px;
+}
+
+.manifesto-body p + p { margin-top: 9px; }
+
+.manifesto-body ul,
+.manifesto-body ol {
+  padding: 3px 2px 3px 32px;
+  margin: 6px 0 0;
+}
+
+.manifesto-body li {
+  font-size: 19px;
+  line-height: 28.5px;
+  padding: 2px 0;
+}
+
+.manifesto-body li + li { margin-top: 2px; }
+
+.manifesto-body strong { font-weight: 700; }
+.manifesto-body em { font-style: italic; }
+
+.manifesto-body a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(82, 84, 83, 0.4);
+  text-underline-offset: 2px;
+}
+
+.manifesto-body a:hover {
+  text-decoration-color: rgba(82, 84, 83, 0.9);
+}
+
+.manifesto-body blockquote {
+  border-left: 3px solid rgba(82, 84, 83, 0.3);
+  margin: 12px 0;
+  padding: 3px 16px;
+  color: var(--text-muted);
+}
+
+.manifesto-body code {
+  font-family: "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.85em;
+  background: rgba(82, 84, 83, 0.08);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+/* References list — slightly denser */
+.manifesto-body h2 + ul li { padding: 3px 0; }
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .notion-root { padding: 0 48px 180px; }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .navbar { font-size: 14px; padding: 0 16px; height: 56px; }
+  .notion-root { padding: 0 24px 120px; }
+  .manifesto-header h1 {
+    font-size: 36px;
+    line-height: 38px;
+    margin-top: 72px;
+  }
+  .manifesto-header .subtitle {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .manifesto-body h2 { font-size: 26px; line-height: 32px; }
+}
