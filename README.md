@@ -1,6 +1,6 @@
 # tx.design
 
-Source for [tx.design](https://tx.design) — *Turning to Trust Experience Design (TXD): A Manifesto for the Future of Distributed Autonomous Intelligence in the Wild* by Helena Rong & Botao Amber Hu.
+Source for [tx.design](https://tx.design) — *Trust Experience Design (TXD): A Manifesto for Distributed Autonomous Futures* by Helena Rong & Botao Amber Hu.
 
 Authored in Markdown, compiled to a static Next.js build, and deployed to GitHub Pages via GitHub Actions.
 

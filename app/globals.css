@@ -189,3 +189,11 @@ body {
   }
   .manifesto-body h2 { font-size: 26px; line-height: 32px; }
 }
+
+/* Figure and footnotes */
+.manifesto-body .manifesto-figure { margin: 32px 0; }
+.manifesto-body .manifesto-figure img { display: block; width: 100%; height: auto; }
+.manifesto-body .manifesto-figure figcaption { font-size: 0.85em; margin-top: 10px; line-height: 1.5; }
+.manifesto-body .footnotes { font-size: 0.85em; margin-top: 38px; }
+.manifesto-body .footnotes h2 { font-size: 22.8px; }
+.manifesto-body sup a { text-decoration: none; }

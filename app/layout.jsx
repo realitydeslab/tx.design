@@ -1,13 +1,19 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Turning to Trust Experience Design (TXD)",
+  title: "Trust Experience Design (TXD)",
   description:
-    "A Manifesto for the Future of Distributed Autonomous Intelligence in the Wild — by Helena Rong and Botao Amber Hu.",
+    "A Manifesto for Distributed Autonomous Futures — by Helena Rong and Botao Amber Hu.",
+  keywords: [
+    "Trust Experience Design",
+    "Protocol Design",
+    "Human–AI Interaction",
+    "AI Delegation",
+    "Trust and Governance",
+  ],
   openGraph: {
-    title: "Turning to Trust Experience Design (TXD)",
-    description:
-      "A Manifesto for the Future of Distributed Autonomous Intelligence in the Wild.",
+    title: "Trust Experience Design (TXD)",
+    description: "A Manifesto for Distributed Autonomous Futures.",
     type: "article",
   },
 };
